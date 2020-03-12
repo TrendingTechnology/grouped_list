@@ -46,9 +46,10 @@ Widget _buildGroupSeparator(dynamic groupByValue) {
 The parameter `groupByValue` has the return type of the defined `groupBy` function.
 
 #### Optional Parameters: 
-* `order`: By default it's GroupedListOrder.ASC. Change to GroupedListOrder.DESC for reversing the group sorting.
+* `order`: By default it's `GroupedListOrder.ASC`. Change to `GroupedListOrder.DESC` for reversing the group sorting.
 * `separator`: A Widget which defines a separator between items inside a section. 
-* `sort`: A bool which defines if the passed data should be sorted by the widget. By default it's true.
+* `useStickyGroupSeparators` . If set to true the top `groupSeparator` will stick on top. Default is `false`.
+* `sort`: A bool which defines if the passed data should be sorted by the widget. By default it's `true`.
 
 ### Notice: 
  * The item builder functions only creates the actual list items. For seperator items use the `separator` parameter.
